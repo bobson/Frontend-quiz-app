@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import quizData from "../data.json";
 
 import "./App.css";
 import Questions from "./components/Questions";
@@ -8,17 +9,10 @@ function App() {
   const [subject, setSubject] = useState(null);
   const [data, setData] = useState(null);
   const [isHovered, setIsHovered] = useState(null);
-  const [results, setResults] = useState(0);
 
+  console.log(data);
   useEffect(() => {
-    async function getData() {
-      const res = await fetch("/data.json");
-
-      const json = await res.json();
-
-      setData(json.quizzes);
-    }
-    getData();
+    setData(quizData.quizzes);
   }, []);
 
   useEffect(() => {
@@ -32,8 +26,6 @@ function App() {
   function resetGame() {
     setSubject(null);
   }
-
-  console.log(results);
 
   if (!data) return <div>Loading...</div>;
 
