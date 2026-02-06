@@ -8,7 +8,13 @@
     text-align: center;
     border-radius: 12px;
     gap: 1rem;
-    margin-block-start: 1.5rem;
+    margin-block-start: 40px;
+
+
+    @media (min-width:720px) {
+
+        margin-block-start: 64px;
+    }
 
     @media (min-width:1200px) {
         padding: 3rem;
