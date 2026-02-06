@@ -10,7 +10,7 @@ const Results = ({ subject, score, resetGame }) => {
       <div className="board">
         <div className="title">
           <img
-            src={subject.icon}
+            src={"/Frontend-quiz-app" + subject.icon}
             alt=""
             style={{
               backgroundColor: `var(--color-${subject.title}-bg)`,

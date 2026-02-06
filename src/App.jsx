@@ -10,7 +10,6 @@ function App() {
   const [data, setData] = useState(null);
   const [isHovered, setIsHovered] = useState(null);
 
-  console.log(data);
   useEffect(() => {
     setData(quizData.quizzes);
   }, []);
@@ -35,14 +34,14 @@ function App() {
         <picture className="bg-image">
           <source
             media="(min-width: 1200px)"
-            srcSet={`/assets/images/pattern-background-desktop-${theme}.svg`}
+            srcSet={`/Frontend-quiz-app/assets/images/pattern-background-desktop-${theme}.svg`}
           />
           <source
             media="(min-width: 768px)"
-            srcSet={`/assets/images/pattern-background-tablet-${theme}.svg`}
+            srcSet={`/Frontend-quiz-app/assets/images/pattern-background-tablet-${theme}.svg`}
           />
           <img
-            src={`/assets/images/pattern-background-mobile-${theme}.svg`}
+            src={`/Frontend-quiz-app/assets/images/pattern-background-mobile-${theme}.svg`}
             alt=""
           />
         </picture>
@@ -55,7 +54,7 @@ function App() {
               role="status"
             >
               <img
-                src={subject?.icon}
+                src={"/Frontend-quiz-app/" + subject?.icon}
                 style={{ backgroundColor: `var(--color-${subject.title}-bg)` }}
                 alt=""
               />
@@ -64,7 +63,7 @@ function App() {
           ) : null}
           <div className="nav-action">
             <img
-              src={`/assets/images/icon-sun-${theme == "dark" ? "light" : "dark"}.svg`}
+              src={`/Frontend-quiz-app/assets/images/icon-sun-${theme == "dark" ? "light" : "dark"}.svg`}
               alt=""
             />
             <button
@@ -81,7 +80,7 @@ function App() {
               ></span>
             </button>
             <img
-              src={`/assets/images/icon-moon-${theme == "dark" ? "light" : "dark"}.svg`}
+              src={`/Frontend-quiz-app/assets/images/icon-moon-${theme == "dark" ? "light" : "dark"}.svg`}
               alt=""
             />
           </div>
@@ -110,7 +109,7 @@ function App() {
                     }}
                   >
                     <img
-                      src={quiz.icon}
+                      src={"/Frontend-quiz-app" + quiz.icon}
                       alt=""
                       style={{
                         backgroundColor: `var(--color-${quiz.title}-bg)`,

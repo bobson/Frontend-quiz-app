@@ -32,17 +32,6 @@
   position: relative;
   max-width: 75rem;
 
-  /* @media (min-width: 640px) {
-    padding-inline: clamp(16px, 4vw, 64px);
-  }
-
-  @media (min-width: 1024px) {
-    padding-inline: clamp(24px, 6vw, 128px);
-  }
-
-  @media (min-width: 1440px) {
-    padding-inline: clamp(32px, 8vw, 184px);
-  } */
 }
 
 .bg-image {

@@ -48,7 +48,7 @@ const Questions = ({ subject, resetGame }) => {
       return (
         <img
           className="option-icon"
-          src="/assets/images/icon-correct.svg"
+          src="/Frontend-quiz-app/assets/images/icon-correct.svg"
           alt=""
         />
       );
@@ -56,7 +56,7 @@ const Questions = ({ subject, resetGame }) => {
       return (
         <img
           className="option-icon"
-          src="/assets/images/icon-incorrect.svg"
+          src="/Frontend-quiz-app/assets/images/icon-incorrect.svg"
           alt=""
         />
       );
@@ -134,7 +134,10 @@ const Questions = ({ subject, resetGame }) => {
         </button>
         {errorMsg && (
           <span className="error-message">
-            <img src="/assets/images/icon-incorrect.svg" alt="" />
+            <img
+              src="/Frontend-quiz-app/assets/images/icon-incorrect.svg"
+              alt=""
+            />
             Please select an answer
           </span>
         )}
