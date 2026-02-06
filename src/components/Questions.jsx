@@ -3,7 +3,7 @@ import { useState } from "react";
 import Results from "./Results";
 
 const Questions = ({ subject, resetGame }) => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(8);
   const [score, setScore] = useState(0);
   const [errorMsg, setErrorMsg] = useState(false);
   const [answer, setAnswer] = useState(null);
