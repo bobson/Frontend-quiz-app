@@ -1,0 +1,36 @@
+.board {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    gap: 1rem;
+    margin-block-start: 1.5rem;
+
+    @media (min-width:1200px) {
+        padding: 3rem;
+        gap: 40px;
+    }
+}
+
+.title {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.score {
+    display: grid;
+    gap: 1rem;
+}
+
+.score span:first-child {
+    font-size: var(--fs-1);
+}
+
+.score span:last-child {
+    color: var(--text-secondary);
+}
